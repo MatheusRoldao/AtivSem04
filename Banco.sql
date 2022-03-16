@@ -1,8 +1,8 @@
 
-CREATE DATABASE [Serviços] 
+CREATE DATABASE [ServiÃ§os] 
 GO
 
-Use Serviços
+Use ServiÃ§os
 
 CREATE TABLE [dbo].[LimiteCliente](
 	[Codigo] [int] IDENTITY(1,1) NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE [dbo].[LimiteCliente](
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
 
-USE Serviços
+USE ServiÃ§os
 GO
 
 
@@ -33,10 +33,10 @@ CREATE TABLE [dbo].[Log](
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
 
-USE Serviços
+USE ServiÃ§os
 GO
 
-/*INSERINDO INSFORMAÇOES A TABELA LIMITE CLIENTE*/
+/*INSERINDO INSFORMAÃ‡OES A TABELA LIMITE CLIENTE*/
 INSERT INTO [dbo].[LimiteCliente]
            ([LimiteCredito]
            ,[Nome]
@@ -79,7 +79,7 @@ INSERT INTO [dbo].[LimiteCliente]
            ,[IsActive])
      VALUES
            (5000.00
-           ,'Marcos Vinicius Gonçalves'
+           ,'Marcos Vinicius GonÃ§alves'
            ,5)
 GO
 INSERT INTO [dbo].[LimiteCliente]
@@ -133,143 +133,11 @@ INSERT INTO [dbo].[LimiteCliente]
            ,[IsActive])
      VALUES
            (13700.00
-           ,'Cléo Miada'
+           ,'ClÃ©o Miada'
            ,11)
 GO
 
 SELECT*FROM LimiteCliente
 
-USE [BDServico]
-GO
 
-INSERT INTO [dbo].[Log]
-           ([Observacao]
-           ,[NomeEntidade]
-           ,[IdEntitade]
-           ,[Usuario])
-     VALUES
-           ('Foi Criado um novo Cliente em: 13/03/2022 as 23:50 Com um Limite de R$1200.00'
-           ,'Cliente'
-           ,1
-           ,'Administrador Rafael')
-GO
 
-INSERT INTO [dbo].[Log]
-           ([Observacao]
-           ,[NomeEntidade]
-           ,[IdEntitade]
-           ,[Usuario])
-     VALUES
-           ('Foi Criado um novo Cliente em: 13/03/2022 as 23:50 Com um Limite de R$2200.00'
-           ,'Cliente'
-           ,2
-           ,'Administrador Rafael')
-GO
-
-INSERT INTO [dbo].[Log]
-           ([Observacao]
-           ,[NomeEntidade]
-           ,[IdEntitade]
-           ,[Usuario])
-     VALUES
-           ('Foi Criado um novo Cliente em: 13/03/2022 as 23:50 Com um Limite de R$3200.00'
-           ,'Cliente'
-           ,3
-           ,'Administrador Rafael')
-GO
-
-INSERT INTO [dbo].[Log]
-           ([Observacao]
-           ,[NomeEntidade]
-           ,[IdEntitade]
-           ,[Usuario])
-     VALUES
-           ('Foi Criado um novo Cliente em: 13/03/2022 as 23:50 Com um Limite de R$1500.00'
-           ,'Cliente'
-           ,4
-           ,'Administrador Rafael')
-GO
-
-INSERT INTO [dbo].[Log]
-           ([Observacao]
-           ,[NomeEntidade]
-           ,[IdEntitade]
-           ,[Usuario])
-     VALUES
-           ('Foi Criado um novo Cliente em: 13/03/2022 as 23:50 Com um Limite de R$22200.00'
-           ,'Cliente'
-           ,5
-           ,'Administrador Rafael')
-GO
-
-INSERT INTO [dbo].[Log]
-           ([Observacao]
-           ,[NomeEntidade]
-           ,[IdEntitade]
-           ,[Usuario])
-     VALUES
-           ('Foi Criado um novo Cliente em: 13/03/2022 as 23:50 Com um Limite de R$6700.00'
-           ,'Cliente'
-           ,6
-           ,'Administrador Rafael')
-GO
-
-INSERT INTO [dbo].[Log]
-           ([Observacao]
-           ,[NomeEntidade]
-           ,[IdEntitade]
-           ,[Usuario])
-     VALUES
-           ('Foi Criado um novo Cliente em: 13/03/2022 as 23:50 Com um Limite de R$55200.00'
-           ,'Cliente'
-           ,7
-           ,'Administrador Rafael')
-GO
-
-INSERT INTO [dbo].[Log]
-           ([Observacao]
-           ,[NomeEntidade]
-           ,[IdEntitade]
-           ,[Usuario])
-     VALUES
-           ('Foi Criado um novo Cliente em: 13/03/2022 as 23:50 Com um Limite de R$155200.00'
-           ,'Cliente'
-           ,8
-           ,'Administrador Rafael')
-GO
-
-INSERT INTO [dbo].[Log]
-           ([Observacao]
-           ,[NomeEntidade]
-           ,[IdEntitade]
-           ,[Usuario])
-     VALUES
-           ('Foi Criado um novo Cliente em: 13/03/2022 as 23:50 Com um Limite de R$133200.00'
-           ,'Cliente'
-           ,9
-           ,'Administrador Rafael')
-GO
-
-INSERT INTO [dbo].[Log]
-           ([Observacao]
-           ,[NomeEntidade]
-           ,[IdEntitade]
-           ,[Usuario])
-     VALUES
-           ('Foi Criado um novo Cliente em: 13/03/2022 as 23:50 Com um Limite de R$126600.00'
-           ,'Cliente'
-           ,10
-           ,'Administrador Rafael')
-GO
-
-INSERT INTO [dbo].[Log]
-           ([Observacao]
-           ,[NomeEntidade]
-           ,[IdEntitade]
-           ,[Usuario])
-     VALUES
-           ('Foi Criado um novo Cliente em: 13/03/2022 as 23:50 Com um Limite de R$122200.00'
-           ,'Cliente'
-           ,11
-           ,'Administrador Rafael')
-GO
